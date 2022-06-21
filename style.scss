@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 body{
 	font-family: 'Montserrat';
-	font-weight: Light;
+	font-weight: 300;
 	background-color: dimgrey;
 }
 
@@ -34,14 +34,13 @@ body{
 
 //=== header======================//
 .header {
+	z-index: 10;
 	display:flex;
 	position: absolute;
 	padding: 40px 0;
 	max-width: 1230px;
 	width: 100%;
-	align-items: center
-	
-	
+	align-items: center		
 }
 .header__logo {
 	display: flex;
@@ -69,6 +68,7 @@ margin: 0 50px 0 0;
 
 
 
+
 }
 .menu {
 }
@@ -86,6 +86,7 @@ margin: 0 50px 0 0;
 		line-height: 1.2; 
 		margin: 0 10px 0 0;
 		display: block;
+		
 }
 
 .menu__items a{
@@ -239,3 +240,142 @@ margin: 0 50px 0 0;
 
 //========Slider1===========================//
 
+
+.main__slider1 {
+	//position: relative;
+	
+}
+.slider1 {
+	
+}
+.slider1__container {
+	
+}
+
+.slider1__container img {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	opacity: 1;
+	transition: all 1s;
+}
+.slider1__image {
+}
+.dot {
+
+	display: inline-flex;
+	border-radius: 50%;
+	margin: 0 10px 0 0;
+	top: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: #939394;
+	z-index: 20;
+	cursor: pointer;
+	
+	
+}
+.radiusButtoms{
+	margin-left: -55px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+}
+
+#left{
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	left: 5%;
+	cursor: pointer;
+}
+#left:active{
+	background-color: black;
+	opacity: 0.1;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+#right{
+	position: absolute;
+	z-index: 10;
+	right: 5%;
+	top: 50%;
+	cursor: pointer;
+}
+#right:active{
+	background-color: black;
+	opacity: 0.1;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.slider1__image.opacity0{
+	opacity: 0;
+	transition: all 1s;
+}
+.actyveButt{
+background-color: darkolivegreen;
+border: 3px solid #afa091;
+width: 1px;
+height: 1px;
+padding: 5px;
+margin-top: -2px;
+background-clip: content-box;
+}
+.radiusButtoms{
+	display: flex;
+}
+.actyveButtoms{
+	align-items: center;
+	padding: 10px 0;
+}
+
+.slider1__title {
+	max-width: 600px;
+	 margin: 0 auto;
+	 position: relative;
+	z-index: 20;
+	
+}
+.title {
+	text-align: center;
+	padding: 15% 0 0 0;
+	
+}
+.title__top {
+		font-size: 36px;
+		font-family: "Raleway";
+		color: rgb(255, 255, 255);
+		margin-bottom: 22px;
+}
+.title__main {
+		font-size: 52px;
+		font-family: "Raleway";
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+		margin-bottom: 30px;	 
+}
+.title__text {
+		font-size: 16px;
+		font-family: "Montserrat";
+		color: rgb(255, 255, 255);
+		text-align: center;
+		margin-bottom: 50px;
+}
+.title__buttom {
+		border-radius: 3px;
+		background-color: #998675;
+		box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+		width: 170px;
+		height: 53px;
+		font-size: 14px;
+		font-family: "Raleway";
+			color: rgb(255, 255, 255);
+			font-weight: bold;
+			line-height: 1.643;
+		 
+}

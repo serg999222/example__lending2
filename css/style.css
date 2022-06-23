@@ -75,7 +75,6 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: 'Montserrat';
   font-weight: 300;
-  background-color: dimgrey;
 }
 
 .wrapper {
@@ -205,7 +204,16 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1001px) {
+  .header__logo {
+    margin: 0 50px 0 0;
+  }
+  .header__menu {
+    margin: 0 20px 0 0;
+  }
+}
+
+@media (max-width: 913px) {
   .header__burgerWrapper {
     position: absolute;
     right: 15px;
@@ -306,16 +314,27 @@ body {
   .header__burgerWrapper {
     position: relative;
   }
+  .logo__text {
+    display: none;
+  }
+}
+
+.slider1__container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
 }
 
 .slider1__container img {
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
+  top: 0;
+  left: 0;
   opacity: 1;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -331,12 +350,12 @@ body {
   width: 10px;
   height: 10px;
   background-color: #939394;
-  z-index: 20;
+  z-index: 50;
   cursor: pointer;
 }
 
 .radiusButtoms {
-  margin-left: -55px;
+  margin-left: -38px;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -344,7 +363,6 @@ body {
 
 #left {
   position: absolute;
-  z-index: 10;
   top: 50%;
   left: 5%;
   cursor: pointer;
@@ -359,7 +377,6 @@ body {
 
 #right {
   position: absolute;
-  z-index: 10;
   right: 5%;
   top: 50%;
   cursor: pointer;
@@ -374,8 +391,6 @@ body {
 
 .slider1__image.opacity0 {
   opacity: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .actyveButt {
@@ -403,14 +418,17 @@ body {
 
 .slider1__title {
   max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 20;
+  min-height: 260px;
+  margin: auto;
+  position: absolute;
+  top: 33%;
+  left: 0;
+  bottom: 10%;
+  right: 0;
 }
 
 .title {
   text-align: center;
-  padding: 15% 0 0 0;
 }
 
 .title__top {
@@ -448,4 +466,35 @@ body {
   color: white;
   font-weight: bold;
   line-height: 1.643;
+}
+
+@media (max-width: 883px) {
+  #left {
+    top: 80%;
+    width: 50px;
+    height: 50px;
+  }
+  #right {
+    width: 50px;
+    height: 50px;
+    top: 80%;
+  }
+}
+
+.main__services {
+  margin-top: 800px;
+}
+
+.services__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services__items > div {
+  padding: 0 5px;
+  margin-right: 20px;
 }

@@ -1,0 +1,24 @@
+.main__purchase {
+	//@include flex(space-around, center)
+	display: flex;
+}
+.purchase {
+	background-color: darkgoldenrod;
+	
+	
+}
+.purchase__content {
+}
+.purchase__title {
+		font-size: 28px;
+		font-family: "Raleway";
+		color: rgb(199, 178, 153) 
+}
+.purchase__text {
+		font-size: 18px;
+		font-family: "Montserrat";
+		color: rgb(97, 88, 85);
+}
+.purchase__button{
+	@include button
+}

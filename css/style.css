@@ -1,4 +1,27 @@
-/*Null Style*/
+body h3 {
+  font-size: 30px;
+  font-family: "Raleway";
+  color: #555555;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-content14 {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #8c8c8c;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.text-content16 {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #8c8c8c;
+  line-height: 1.75;
+  text-align: center;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -71,26 +94,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-/*--------------------*/
-body {
-  font-family: 'Montserrat';
-  font-weight: 300;
-}
-
-.wrapper {
-  overflow: hidden;
-}
-
-._container {
-  max-width: 1230px;
-  margin: 0 auto;
-}
-
 .header {
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
   position: absolute;
   padding: 40px 0;
   max-width: 1230px;
@@ -272,6 +283,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    overflow: scroll;
     background-color: blue;
     padding: 60px 0 20px 0;
     -webkit-transition: all 0.5s;
@@ -284,7 +296,7 @@ body {
             flex-direction: column;
   }
   .menu__items li {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
   .header__search {
     display: block;
@@ -294,6 +306,13 @@ body {
     top: 0;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+    font-size: 30px;
+  }
+  .header__menu.active .menu__item {
+    font-size: 30px;
+  }
+  .header__menu.active #about {
+    font-size: 30px;
   }
 }
 
@@ -359,6 +378,9 @@ body {
   position: absolute;
   bottom: 0;
   left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #left {
@@ -393,6 +415,10 @@ body {
   opacity: 0;
 }
 
+.slider1__image {
+  min-height: 750px;
+}
+
 .actyveButt {
   background-color: darkolivegreen;
   border: 3px solid #afa091;
@@ -401,12 +427,6 @@ body {
   padding: 5px;
   margin-top: -2px;
   background-clip: content-box;
-}
-
-.radiusButtoms {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .actyveButtoms {
@@ -438,6 +458,12 @@ body {
   margin-bottom: 22px;
 }
 
+@media (max-width: 1230px) {
+  .title__top {
+    font-size: calc(26px + (36 - 26)*((100vw - 320px) / (1200 - 320)));
+  }
+}
+
 .title__main {
   font-size: 52px;
   font-family: "Raleway";
@@ -446,12 +472,31 @@ body {
   margin-bottom: 30px;
 }
 
+@media (max-width: 1230px) {
+  .title__main {
+    font-size: calc(40px + (52 - 40)*((100vw - 320px) / (1200 - 320)));
+  }
+}
+
 .title__text {
   font-size: 16px;
   font-family: "Montserrat";
   color: white;
   text-align: center;
   margin-bottom: 50px;
+  padding: 0 10px;
+}
+
+@media (max-width: 1230px) {
+  .title__text {
+    margin-bottom: calc(30px + (50 - 30)*((100vw - 320px) / (1200 - 320)));
+  }
+}
+
+@media (max-width: 1230px) {
+  .title__text {
+    font-size: calc(14px + (16 - 14)*((100vw - 320px) / (1200 - 320)));
+  }
 }
 
 .title__buttom {
@@ -466,35 +511,293 @@ body {
   color: white;
   font-weight: bold;
   line-height: 1.643;
+  cursor: pointer;
 }
 
 @media (max-width: 883px) {
   #left {
     top: 80%;
-    width: 50px;
-    height: 50px;
   }
   #right {
-    width: 50px;
-    height: 50px;
     top: 80%;
   }
 }
 
+@media (max-width: 1230px) {
+  #right {
+    width: calc(40px + (55 - 40)*((100vw - 320px) / (1200 - 320)));
+    height: calc(40px + (55 - 40)*((100vw - 320px) / (1200 - 320)));
+  }
+}
+
+@media (max-width: 1230px) {
+  #left {
+    width: calc(40px + (55 - 40)*((100vw - 320px) / (1200 - 320)));
+    height: calc(40px + (55 - 40)*((100vw - 320px) / (1200 - 320)));
+  }
+}
+
 .main__services {
-  margin-top: 800px;
+  margin-top: 920px;
 }
 
 .services__items {
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .services__items > div {
   padding: 0 5px;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 289px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1241px) {
+  .services__items > div {
+    padding: 0 10px;
+  }
+}
+
+.services__items > div:not(:last-child) {
   margin-right: 20px;
+}
+
+@media (max-width: 1241px) {
+  .services__items > div:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+.item__image {
+  margin-bottom: 30px;
+  width: 42px;
+  height: 42px;
+}
+
+.item__title {
+  margin-bottom: 25px;
+}
+
+.item__content {
+  margin-bottom: 25px;
+}
+
+.item__underBlock {
+  width: 70px;
+  height: 3px;
+  background-color: #f1eee9;
+  margin-bottom: 70px;
+}
+
+.main__services {
+  margin-top: 920px;
+}
+
+.services__items {
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.services__items > div {
+  padding: 0 5px;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 289px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1241px) {
+  .services__items > div {
+    padding: 0 10px;
+  }
+}
+
+.services__items > div:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media (max-width: 1241px) {
+  .services__items > div:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+.item__image {
+  margin-bottom: 30px;
+  width: 42px;
+  height: 42px;
+}
+
+.item__title {
+  margin-bottom: 25px;
+}
+
+.item__content {
+  margin-bottom: 25px;
+}
+
+.item__underBlock {
+  width: 70px;
+  height: 3px;
+  background-color: #f1eee9;
+  margin-bottom: 70px;
+}
+
+.realisation {
+  background-color: #fbfaf8;
+}
+
+.realisation__title {
+  padding-top: 85px;
+  margin-bottom: 25px;
+}
+
+.realisation__text {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #8c8c8c;
+  line-height: 1.75;
+  text-align: center;
+  margin: 0 auto 35px;
+  max-width: 767px;
+}
+
+.realisation__photo {
+  position: relative;
+  max-width: 774px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.realisation__photo > div {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+}
+
+.realisation1 {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+.realisation2 {
+  width: 100%;
+  position: relative;
+  top: 80px;
+  left: 230px;
+}
+
+.realisation3 {
+  width: 100%;
+  position: relative;
+  top: 80px;
+  right: 230px;
+}
+
+.main__purchase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.purchase {
+  background-color: darkgoldenrod;
+}
+
+.purchase__title {
+  font-size: 28px;
+  font-family: "Raleway";
+  color: #c7b299;
+}
+
+.purchase__text {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: #615855;
+}
+
+.purchase__button {
+  border-radius: 3px;
+  background-color: #998675;
+  -webkit-box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+          box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+  width: 170px;
+  height: 53px;
+  font-size: 14px;
+  font-family: "Raleway";
+  color: white;
+  font-weight: bold;
+  line-height: 1.643;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+
+.wrapper {
+  overflow: hidden;
+  max-width: 1920px;
+}
+
+._container {
+  max-width: 1230px;
+  margin: 0 auto;
 }

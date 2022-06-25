@@ -1,0 +1,25 @@
+@import 'main';
+@import 'null';
+@import 'header';
+@import 'slider1';
+@import 'service';
+@import 'service';
+@import 'realisation';
+@import 'purchase';
+body{
+	font-family: 'Montserrat';
+	font-weight: 300;
+}
+
+.wrapper {
+	overflow: hidden;
+	max-width: 1920px;
+	
+}
+	
+._container {
+	@include container(1230px);
+}
+
+
+

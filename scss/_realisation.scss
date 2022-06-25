@@ -1,0 +1,63 @@
+.main__realisation {
+}
+.realisation {
+	background-color: #fbfaf8;
+}
+.realisation__container {
+}
+._container {
+}
+.realisation__title {
+	padding-top: 85px;
+	margin-bottom: 25px;
+}
+.realisation__text {
+		font-size: 16px;
+		font-family: "Montserrat";
+		color: rgb(140, 140, 140);
+		line-height: 1.75;
+		text-align: center;
+		margin:0 auto 35px;
+		max-width: 767px;
+}
+.realisation__photo{
+	position: relative;
+	max-width: 774px;
+	height: 500px;
+	//max-width: 775px;
+	margin: 0 auto;
+}
+
+.realisation__photo > div{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 0;
+
+}
+.realisation__photo1{
+
+
+}
+.realisation1{
+	width: 100%;
+	position: relative;
+	z-index: 3;
+}
+
+.realisation2{
+	width: 100%;
+	position: relative;
+	top: 80px;left: 230px;
+	
+}
+.realisation3{
+	width: 100%;
+	position: relative;
+	top: 80px;right: 230px;
+}
+
+
+.swiper__slide {
+
+}

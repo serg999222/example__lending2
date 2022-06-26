@@ -43,19 +43,10 @@ function fleft(){
 	if (current < 0){
 		return current = allSlides.length -1
 	}
-	// for (let i = 0; i < allSlides.length; i++){
-	// 	buttomsRadius[i].classList.remove('actyveButt')
-	// }
-	// buttomsRadius[current].classList.add('actyveButt')
-	// current--
-	// if (current < 0){
-	// 	return current = allSlides.length -1
-	// }
 }
 
 function currentSlide(n){
 	let radialActyve = document.querySelectorAll('.actyveButtoms')
-	//let buttomsRadius = document.querySelectorAll('.dot')
 	for (let i = 0; i < allSlides.length; i++){
 		allSlides[i].classList.add('opacity0')
 	}
@@ -65,6 +56,48 @@ function currentSlide(n){
 		buttomsRadius[i].classList.remove('actyveButt')
 	}
 	 buttomsRadius[current].classList.add('actyveButt')
-	// radialActyve[current].classList.add('radialActyve')
 
 }
+
+
+//========latest works======================================//
+
+ document.querySelector('.button__all').onclick = function(){
+let itemAll = document.querySelectorAll('.latest-project__window-wrapper > div')
+for(let i = 0; i < itemAll.length; i++){
+	itemAll[i].classList.add('opacity0')
+}
+document.querySelector('.window-all').classList.remove('opacity0')
+}
+
+ document.querySelector('.button__web-design').onclick = function(){
+	let itemAll = document.querySelectorAll('.latest-project__window-wrapper > div')
+	for(let i = 0; i < itemAll.length; i++){
+		itemAll[i].classList.add('opacity0')
+	}
+	document.querySelector('.latest-project__window-web-design').classList.remove('opacity0')
+	}
+
+	document.querySelector('.button__mobile-app').onclick = function(){
+		let itemAll = document.querySelectorAll('.latest-project__window-wrapper > div')
+		for(let i = 0; i < itemAll.length; i++){
+			itemAll[i].classList.add('opacity0')
+		}
+		document.querySelector('.latest-project__window-mobile-app').classList.remove('opacity0')
+		}
+
+		document.querySelector('.button__illustration').onclick = function(){
+			let itemAll = document.querySelectorAll('.latest-project__window-wrapper > div')
+			for(let i = 0; i < itemAll.length; i++){
+				itemAll[i].classList.add('opacity0')
+			}
+			document.querySelector('.latest-project__window-illustration').classList.remove('opacity0')
+			}
+
+			document.querySelector('.button__photography').onclick = function(){
+				let itemAll = document.querySelectorAll('.latest-project__window-wrapper > div')
+				for(let i = 0; i < itemAll.length; i++){
+					itemAll[i].classList.add('opacity0')
+				}
+				document.querySelector('.latest-project__window-photography').classList.remove('opacity0')
+				}

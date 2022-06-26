@@ -1,0 +1,135 @@
+.latest-project__window-wrapper{
+	position: relative;
+	min-height: 800px;
+}
+
+.main__latest-project {
+}
+.latest-project {
+}
+._container {
+}
+
+.latest-project__manedgment{
+
+}
+.latest-project__title {
+	margin-bottom: 30px;
+	
+}
+.latest-project__text {
+	padding: 0 170px;
+	margin-bottom: 40px;
+}
+.latest-project__buttons {
+	padding: 0 10px;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+#buttomChoce{
+	margin: 0 10px 0 0;
+	font-size: 14px;
+	font-family: "Montserrat";
+	color: rgb(140, 140, 140);
+	border: solid 2px #ebebeb;
+	border-radius: 3px;
+	background-color: #ffffff;
+	box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+	width: 170px;
+	height: 53px;
+	font-weight: 300;
+	line-height: 1.643;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+#buttomChoce:hover{
+	background-color: #6f6256;
+	color: #ffffff;
+}
+
+#buttomChoce:active{
+	background-color: #6f6256;
+	color: #ffffff;
+}
+
+.button {
+
+}
+.button__all {
+}
+.button__web-design {
+}
+.button__mobile-app {
+}
+.button__illustration {
+}
+.button__photography {
+}
+.latest-project__window-all {
+	transition: all ease-in-out 1.2s;
+	//flex-wrap: wrap
+	position: absolute;
+	@include flex (space-around ,center);
+	flex-wrap: wrap
+}
+.window-all {
+	justify-content: space-around;
+}
+.window__item {
+	background-color: #fbfaf8;
+	margin: 0 0 30px 0;
+}
+.window__itemText {
+}
+.itemText {
+}
+.itemText__title {
+	margin-bottom: 15px;
+}
+.itemText__text {
+		font-size: 14px;
+		font-family: "Montserrat";
+		color: rgb(209, 209, 209);
+	margin-bottom: 25px;
+}
+.windowl__itemText {
+}
+.latest-project__window-web-design {
+	transition: all ease-in-out 1.2s;
+	position: absolute;
+	@include flex (space-around ,center);
+	flex-wrap: wrap
+}
+.window-web-design {
+}
+.latest-project__window-mobile-app {
+	transition: all ease-in-out 1.2s;
+	position: absolute;
+	@include flex (space-around ,center);
+	flex-wrap: wrap
+}
+.window-mobile-appl {
+}
+.latest-project__window-illustration {
+	transition: all ease-in-out 1.2s;
+	position: absolute;
+	@include flex (space-around ,center);
+	flex-wrap: wrap
+}
+.window-illustrationl {
+}
+.latest-project__window-photography {
+	transition: all ease-in-out 1.2s;
+	position: absolute;
+	@include flex (space-around ,center);
+	flex-wrap: wrap
+}
+.window-photography {
+}
+
+.opacity0{
+	opacity: 0;
+	transition: all 0.3s;
+}

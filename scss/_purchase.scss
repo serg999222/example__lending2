@@ -1,6 +1,12 @@
 .main__purchase {
-	//@include flex(space-around, center)
-	display: flex;
+	position: relative;
+	z-index: 3;
+	bottom: 20px;
+	height: 150px;
+	margin-bottom: 80px;
+	background: linear-gradient(to right,#211b19, #4e3427);
+	@include flex(space-around, center)
+	
 }
 .purchase {
 	background-color: darkgoldenrod;
@@ -12,7 +18,9 @@
 .purchase__title {
 		font-size: 28px;
 		font-family: "Raleway";
-		color: rgb(199, 178, 153) 
+		color: rgb(199, 178, 153);
+		margin-bottom: 15px;
+		 
 }
 .purchase__text {
 		font-size: 18px;

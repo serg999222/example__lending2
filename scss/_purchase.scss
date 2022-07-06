@@ -4,7 +4,7 @@
 	bottom: 20px;
 	height: 150px;
 	margin-bottom: 80px;
-	background: linear-gradient(to right,#211b19, #4e3427);
+	background: $bgBraun;
 	@include flex(space-around, center)
 	
 }

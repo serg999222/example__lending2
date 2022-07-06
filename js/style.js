@@ -62,42 +62,74 @@ function currentSlide(n){
 
 //========latest works======================================//
 
+let itemAll = document.querySelectorAll('.latest-project__window-wrapper > div')
+for(let i = 0; i < itemAll.length; i++){
+	itemAll[i].classList.add('display-none')
+	itemAll[i].style.position = 'absolute'
+}
+document.querySelector('.window-all').classList.remove('display-none')
+document.querySelector('.window-all').style.position = 'relative'
+
+
+
  document.querySelector('.button__all').onclick = function(){
 let itemAll = document.querySelectorAll('.latest-project__window-wrapper > div')
 for(let i = 0; i < itemAll.length; i++){
-	itemAll[i].classList.add('opacity0')
+	itemAll[i].classList.add('display-none')
+	itemAll[i].style.position = 'absolute'
 }
-document.querySelector('.window-all').classList.remove('opacity0')
+document.querySelector('.window-all').classList.remove('display-none')
+document.querySelector('.window-all').style.position = 'relative'
 }
 
  document.querySelector('.button__web-design').onclick = function(){
 	let itemAll = document.querySelectorAll('.latest-project__window-wrapper > div')
 	for(let i = 0; i < itemAll.length; i++){
-		itemAll[i].classList.add('opacity0')
+		itemAll[i].classList.add('display-none')
+		itemAll[i].style.position = 'absolute'
 	}
-	document.querySelector('.latest-project__window-web-design').classList.remove('opacity0')
+	document.querySelector('.latest-project__window-web-design').classList.remove('display-none')
+	document.querySelector('.latest-project__window-web-design').style.position = 'relative'
 	}
 
 	document.querySelector('.button__mobile-app').onclick = function(){
 		let itemAll = document.querySelectorAll('.latest-project__window-wrapper > div')
 		for(let i = 0; i < itemAll.length; i++){
-			itemAll[i].classList.add('opacity0')
+			itemAll[i].classList.add('display-none')
+			itemAll[i].style.position = 'absolute'
 		}
-		document.querySelector('.latest-project__window-mobile-app').classList.remove('opacity0')
+		document.querySelector('.latest-project__window-mobile-app').classList.remove('display-none')
+		document.querySelector('.latest-project__window-mobile-app').style.position = 'relative'
 		}
 
 		document.querySelector('.button__illustration').onclick = function(){
 			let itemAll = document.querySelectorAll('.latest-project__window-wrapper > div')
 			for(let i = 0; i < itemAll.length; i++){
-				itemAll[i].classList.add('opacity0')
+				itemAll[i].classList.add('display-none')
+				itemAll[i].style.position = 'absolute'
 			}
-			document.querySelector('.latest-project__window-illustration').classList.remove('opacity0')
+			document.querySelector('.latest-project__window-illustration').classList.remove('display-none')
+			document.querySelector('.latest-project__window-illustration').style.position = 'relative'
 			}
 
 			document.querySelector('.button__photography').onclick = function(){
 				let itemAll = document.querySelectorAll('.latest-project__window-wrapper > div')
 				for(let i = 0; i < itemAll.length; i++){
-					itemAll[i].classList.add('opacity0')
+					itemAll[i].classList.add('display-none')
+					itemAll[i].style.position = 'absolute'
 				}
-				document.querySelector('.latest-project__window-photography').classList.remove('opacity0')
+				document.querySelector('.latest-project__window-photography').classList.remove('display-none')
+				document.querySelector('.latest-project__window-photography').style.position = 'relative'
 				}
+
+//=======video-player=======================================//
+
+
+let playerBlock = document.querySelector('.video__button')
+
+playerBlock.onclick =  ()  => {
+	let videoP = document.querySelector('.video-mp4')
+	videoP.controls = 'controls'
+	videoP.play()
+	document.querySelector('.video__items').classList.add('display-none')
+}

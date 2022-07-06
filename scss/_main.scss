@@ -1,6 +1,7 @@
 
 $broun:#998675;
 $mc: 0 auto;
+$bgBraun: linear-gradient(to right,#211b19, #4e3427);
 
 @mixin flex($jc, $ai) {
 	display: flex;
@@ -17,9 +18,9 @@ $mc: 0 auto;
 	&:hover{
 		background-color: #6f6256;
 	}
+	box-shadow: 0 4px #736357;
 	border-radius: 3px;
 	background-color: #998675;
-	box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
 	width: 170px;
 	height: 53px;
 	font-size: 14px;

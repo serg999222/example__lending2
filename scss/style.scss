@@ -9,6 +9,11 @@
 @import 'latest';
 @import 'video';
 @import 'excellendFor';
+@import 'amount';
+@import 'posts';
+@import 'labels';
+@import 'lastBlock';
+@import 'footer';
 
 body{
 	font-family: 'Montserrat';
@@ -18,11 +23,18 @@ body{
 .wrapper {
 	overflow: hidden;
 	max-width: 1920px;
+	display: flex;
+	flex-direction: column;
 	
+}
+
+.main{
+	flex: 1 1 auto;
 }
 	
 ._container {
 	@include container(1230px);
 }
+
 
 

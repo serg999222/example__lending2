@@ -1,0 +1,109 @@
+.footer {
+	background-color: #111111;
+}
+.footer__container {
+	@include flex(space-between, center);
+	padding: 50px 35px;
+
+
+}
+
+.footer__leftMenu {
+}
+.leftMenu {
+	display: flex;
+	position: relative;
+
+	span{
+		color: #c7b299;
+		opacity: 0.7;
+	}
+
+	li{
+
+	}
+	
+	li:not(:last-child){
+		margin-right: 10px;
+		&::after{
+			content: '';
+			position: absolute;
+			
+			width: 2px;
+			height: 100%;
+			background-color:  #252525;
+		}
+	
+	}
+
+	a{
+			font-size: 13px;
+			font-family: "Montserrat";
+			color: rgb(85, 85, 85);
+			margin-right: 10px;	 
+	}
+}
+.leftMenu__copiright {
+}
+.leftMenu__Polic {
+}
+.leftMenu__FAQ {
+}
+.leftMenu__Support {
+}
+.footer__rightMenu {
+}
+.rightMenu {
+	display: flex;
+	position: relative;
+
+	span{
+		color: #c7b299;
+		opacity: 0.7;
+	}
+
+	li:not(:last-child){
+		margin-right: 10px;
+		&::after{
+			content: '';
+			position: absolute;
+			
+			width: 2px;
+			height: 100%;
+			background-color: #252525;
+		}
+	
+	}
+
+	a{
+		font-size: 13px;
+		font-family: "Montserrat";
+		color: rgb(85, 85, 85);
+		margin-right: 10px;	 
+}
+}
+.rightMenu__Designedt {
+}
+.rightMenu__Market {
+}
+
+.footer-Menu__item{
+	position: relative;
+
+	&::before{
+		content: '';
+		background-color: #c7b299;
+		width: calc(100% - 10px);
+		height: 1px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		transition: all 0.2s;
+		transform: scaleX(0);
+
+		
+	}
+	&:hover::before{
+		transform: scaleX(1);
+	}
+}

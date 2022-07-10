@@ -1,0 +1,164 @@
+.main__lastBlock {
+}
+.lastBlock {
+	background-color: #191919;
+}
+.lastBlock__container {
+	padding: 70px 15px;
+}
+._container {
+}
+.last-span{
+
+
+	 
+}
+
+.lastBlock__flexContainer {
+	span{
+		background-color: rgb(54, 54, 54);
+		display: inline-block;
+		width: 100%;
+		height: 1px;
+		margin-bottom: 15px;
+	}
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
+	&>div{
+		max-width: 303px;
+		padding: 0 15px;
+	}
+}
+.lastBlock__column1 {
+
+}
+.column1 {
+}
+.column1__logo {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+	p{
+		font-size: 34px;
+		font-family: "Raleway";
+		color: rgb(255, 255, 255);
+}
+}
+.column1__text {
+		font-size: 14px;
+		font-family: "Montserrat";
+		color: rgb(85, 85, 85);
+		line-height: 1.714; 
+		margin-bottom: 30px;
+		position: relative;
+}
+.column1__link {
+	a{
+		font-size: 14px;
+		font-family: "Montserrat";
+		font-weight: bold;
+		color: rgb(209, 209, 209);
+	}
+
+	img{
+		position: relative;
+		left: 2px;
+		top: 2px;
+		width: 10px;
+		height: 10px;
+		transform: rotate(90deg);
+
+	}
+}
+.lastBlock__column2 {
+}
+.column2 {
+}
+.column2__title {
+		font-size: 24px;
+		font-family: "Montserrat";
+		color: rgb(255, 255, 255);
+		line-height: 1.2;
+		margin-bottom: 25px;
+}
+.title-column {
+}
+.column__date {
+		font-size: 12px;
+		font-family: "Montserrat";
+		color: rgb(54, 54, 54);	
+		margin-bottom: 10px; 
+}
+.column2__text {
+	margin-bottom: 20px;
+}
+.text-column {
+		font-size: 14px;
+		font-family: "Montserrat";
+		color: rgb(85, 85, 85);
+	 
+}
+.column__date-white {
+		font-size: 12px;
+		font-family: "Montserrat";
+		color: rgb(255, 255, 255);
+	 
+
+
+	 
+}
+.column__text-white {
+		font-size: 14px;
+		font-family: "Montserrat";
+		color: rgb(199, 178, 153);
+		line-height: 1.429;
+		opacity: 0.7;
+	 
+}
+.lastBlock__column3 {
+	a{
+		color: #00bff3;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.column3 {
+}
+.column3__title {
+		font-size: 24px;
+		font-family: "Raleway";
+		color: rgb(255, 255, 255);
+		font-weight: bold; 
+		margin-bottom: 30px;
+}
+.column3__text {
+	position: relative;
+	margin-bottom: 10px;
+	span{
+		all: initial;
+		font-size: 14px;
+		font-family: "Montserrat";
+		color: #959595;
+	}
+}
+.column3__date {
+	margin-bottom: 20px;
+}
+.lastBlock__column4 {
+}
+.column4 {
+}
+.column4__title {
+	font-size: 24px;
+	font-family: "Raleway";
+	color: rgb(255, 255, 255);
+	font-weight: bold; 
+	margin-bottom: 30px;
+}
+.column4__container {
+	display: grid;
+	grid-template: 1fr 1fr/1fr 1fr;
+	grid-gap: 8px;
+}

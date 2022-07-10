@@ -133,3 +133,78 @@ playerBlock.onclick =  ()  => {
 	videoP.play()
 	document.querySelector('.video__items').classList.add('display-none')
 }
+
+
+//====slider2==================================================//
+
+let slides = document.querySelectorAll('.slider-item__slide')
+let slideSrc = []
+let currentS = 1
+let offsetS = 0
+
+for(let i=0; i < slides.length; i++){
+	slideSrc[i] = slides[i]
+}
+
+slideSrc[currentS +1].style.left = 390 + 'px'
+slideSrc[currentS - 1].style.left = -390 + 'px'
+
+let positionSl0 = -390
+let positionSl1 = 0
+let positionSl2 = 390
+
+document.querySelector('.butNext').onclick = 
+function(){
+	
+ 	 for(let i=0; i < slides.length; i++){
+	  slideSrc[i] = slides[i]
+	  //slides[i].classList.add('opasity0')
+	  slides[i].style.opacity = '0'
+ }
+
+positionSl0 += 390
+if(positionSl0 > 390){
+	positionSl0 = -390
+}
+
+positionSl1 += 390
+if(positionSl1 > 390){
+	positionSl1 = -390
+}
+positionSl2 += 390
+if(positionSl2 > 390){
+	positionSl2 = -390
+}
+
+function f5(){
+let slide0 = slideSrc[currentS - 1].style.left = positionSl0 + 'px'
+let slide1 = slideSrc[currentS].style.left = positionSl1 + 'px'
+let slide2 = slideSrc[currentS + 1].style.left = positionSl2 + 'px'
+}
+setTimeout(f5, 500)
+
+//let f3 = function(){
+// 	slideSrc[currentS - 1].classList.remove('opasity0')
+// 	slideSrc[currentS].classList.remove('opasity0')
+//   slideSrc[currentS + 1].classList.remove('opasity0')
+ // }
+ //slides[i].style.opacity = '0'
+ // setTimeout(f3(), 5000)
+
+
+
+//  let f3 = function(){
+	//setTimeout(f4(), 2000)
+// }
+function f4(){
+ 	slideSrc[currentS - 1].style.opacity = '1'
+	slideSrc[currentS].style.opacity = '1'
+  slideSrc[currentS + 1].style.opacity = '1'
+  
+}
+setTimeout(f4, 500)
+
+}
+
+
+

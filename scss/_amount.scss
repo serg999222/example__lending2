@@ -1,0 +1,69 @@
+.main__amount {
+	position: relative;
+	background: $bgBraun;
+	//min-height: 300px;
+}
+
+.amount {}
+
+.amount__container {
+	padding: 60px 15px;
+
+}
+
+.amountt__flexContainer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	//@include flex(space-around, center);
+
+}
+
+.amount__item {
+	//justify-content: space-around;
+
+}
+
+.item-amout {}
+
+.item-amout__content {
+	text-align: center;
+}
+
+.item-amout__content span{
+	width: 30px;
+	height: 2px;
+	background-color:#ffffff;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.item-amout__content img {
+	width: 44px;
+	height: 44px;
+	margin-bottom: 30px;
+
+
+}
+
+.item-amout__int {
+
+	font-size: 48px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	line-height: 0.75;
+	text-align: center;
+	margin-bottom: 15px;
+
+}
+
+.item-amout__text {
+		font-size: 14px;
+		font-family: "Montserrat";
+		color: rgb(199, 178, 153);
+		text-transform: uppercase;
+		text-align: center; 
+		margin-bottom: 25px;
+}
+

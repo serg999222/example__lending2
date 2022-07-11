@@ -71,3 +71,16 @@
 }
 .item__marketing {
 }
+
+@media(max-height:470px){
+	.main__services {
+		margin-top:500px;
+	}
+}
+
+@media(max-width:1156px){
+	.services__items{
+		max-width: 800px;
+		margin: 0 auto;
+	}
+}

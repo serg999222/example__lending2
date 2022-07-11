@@ -48,6 +48,7 @@
 	top: 50%;
 	left: 5%;
 	cursor: pointer;
+	z-index: 2;
 }
 
 #left:active{
@@ -62,6 +63,7 @@
 	right: 5%;
 	top: 50%;
 	cursor: pointer;
+	z-index: 2;
 }
 #right:active{
 	background-color: black;
@@ -179,3 +181,23 @@ background-clip: content-box;
 }
 
 }
+@media(max-height:470px){
+	.title__top{
+		font-size: 25px;
+		max-width: 200px;
+		margin: 0 auto 10px;
+		
+	}
+	.title__main{
+		font-size: 30px;
+	}
+
+	.radiusButtoms{
+		display: none;
+	}
+
+	.slider1__image{
+		min-height: 100%;
+	}
+}
+

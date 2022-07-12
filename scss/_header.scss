@@ -18,6 +18,7 @@
 	max-width: 230px;
 	margin: 0 205px 0 0;
 	padding: 0 0 0 15px;
+	z-index: 2;
 }
 .logo {
 }
@@ -43,10 +44,12 @@ margin: 0 50px 0 0;
 .menu {
 }
 .menu__items {
+	padding-top: 100px;
 	display: flex;
 	height: 100%;
 	align-items: center;
 	justify-content: space-between;
+	
 	
 }
 
@@ -54,7 +57,7 @@ margin: 0 50px 0 0;
 		font-size: 14px;
 		font-family: "Montserrat";
 		line-height: 1.2; 
-		margin: 0 10px 0 0;
+		margin: 20px 10px 0 0;
 		display: block;
 		
 }
@@ -176,16 +179,19 @@ margin: 0 50px 0 0;
 	}
 
 	.header__menu{
+		background: url(../img/photoMountainsBottom.png) no-repeat;
+		background-position: top;
+		background-size: 100% 150px;
 		position: fixed;
 		top: 0;
 		left: -200%;
 		width: 100%;
-		height: 90%;
+		height: 100%;
 		overflow: scroll;
 		background-color: rgb(48, 48, 54);
 		padding:60px 0 20px 0;
 		transition: all 0.5s;
-		border-top: solid 20px rgb(132, 142, 134);
+		border-top: solid 20px rgb(48, 48, 54);
 		//z-index: 102;
 		
 		
@@ -196,7 +202,7 @@ margin: 0 50px 0 0;
 		flex-direction: column;
 	}
 	.menu__items li{
-		margin-bottom: 20px;
+		margin-bottom: 0px;
 	}
 
 	.header__search{
@@ -245,7 +251,7 @@ margin: 0 50px 0 0;
 		transform: rotate(135deg);
 		top: 9px;
 		transition: all 0.5s;
-		left: 35vw;
+		left: 38vw;
 		
 	}
 
@@ -253,7 +259,7 @@ margin: 0 50px 0 0;
 		transform: rotate(-135deg);
 		bottom: 9px;
 		transition: all 0.5s;
-		left: 35vw;
+		left: 38vw;
 		
 	}
 

@@ -1,6 +1,6 @@
 .main__services {
 	//margin-top:1150px;
-	margin-top:1200px;
+	margin:1200px 0 0 0;
 }
 @media(max-height:985px){
 	.main__services {
@@ -37,6 +37,7 @@
 }
 .services__items {
 	position: relative;
+	margin: 0 -10px;
 	//flex-wrap: wrap;
 	//border: solid 2px rgb(215, 75, 75);
 	flex-wrap: wrap;
@@ -86,23 +87,31 @@
 .item__content {
 	margin-bottom: 25px;
 }
-.item__underBlock {
+.item__content::after{
+	content: '';
+	display: block;
+	margin: 20px auto 70px;
 	width: 70px;
 	height: 3px;
-	background-color: #f1eee9;
-	margin-bottom: 70px;
+	 background-color: #f1eee9;
+
 }
+
+
 
 .item__design :hover {
 	.item__title{
 		opacity: 0.5;
 		transition: all 0.3s;
 	}
-	.item__underBlock{
+
+	.item__content::after{
+		content: '';
 		background-color: #5555;
 		opacity: 0.5;
 		transition: all 0.3s;
 	}
+
 	.item__image{
 		opacity: 0.5;
 		transition: all 0.3s;
@@ -114,7 +123,8 @@
 		opacity: 0.5;
 		transition: all 0.3s;
 	}
-	.item__underBlock{
+	.item__content::after{
+		content: '';
 		background-color: #5555;
 		opacity: 0.5;
 		transition: all 0.3s;
@@ -129,11 +139,13 @@
 		opacity: 0.5;
 		transition: all 0.3s;
 	}
-	.item__underBlock{
+	.item__content::after{
+		content: '';
 		background-color: #5555;
 		opacity: 0.5;
 		transition: all 0.3s;
 	}
+
 	.item__image{
 		opacity: 0.5;
 		transition: all 0.3s;
@@ -144,7 +156,8 @@
 		opacity: 0.5;
 		transition: all 0.3s;
 	}
-	.item__underBlock{
+	.item__content::after{
+		content: '';
 		background-color: #5555;
 		opacity: 0.5;
 		transition: all 0.3s;

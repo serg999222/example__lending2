@@ -5,6 +5,7 @@
 	height: 100%;
 	//min-height: 1400px;
 	z-index: 20;
+	
 }
 
 .slider1__container img {
@@ -117,6 +118,33 @@ background-clip: content-box;
 	.title__top{
 	font-size: calc(26px + (36 - 26)*((100vw - 320px) / (1200 - 320)));
 }
+.title__main{
+	font-size: calc(40px + (52 - 40)*((100vw - 320px) / (1200 - 320)));
+}
+.title__text{
+	margin-bottom: calc(30px + (50 - 30)*((100vw - 320px) / (1200 - 320)));
+}
+.title__text{
+	font-size: calc(14px + (16 - 14)*((100vw - 320px) / (1200 - 320)));
+}
+#right{
+	width: calc(40px + (55 - 40)*((100vw - 320px) / (1200 - 320)));
+	height: calc(40px + (55 - 40)*((100vw - 320px) / (1200 - 320)));
+}
+#left{
+	width: calc(40px + (55 - 40)*((100vw - 320px) / (1200 - 320)));
+	height: calc(40px + (55 - 40)*((100vw - 320px) / (1200 - 320)));
+}
+
+}
+
+@media(max-width:550px){
+	#right{
+		display: none;
+	}
+	#left{
+		display: none;
+	}
 }
 .title__main {
 		font-size: 52px;
@@ -125,11 +153,7 @@ background-clip: content-box;
 		font-weight: bold;
 		margin-bottom: 30px;	 
 }
-@media(max-width:1230px){
-	.title__main{
-	font-size: calc(40px + (52 - 40)*((100vw - 320px) / (1200 - 320)));
-}
-}
+
 .title__text {
 		font-size: 16px;
 		font-family: "Montserrat";
@@ -138,18 +162,7 @@ background-clip: content-box;
 		margin-bottom: 50px;
 		padding: 0 10px;
 }
-@media(max-width:1230px){
-	.title__text{
-		margin-bottom: calc(30px + (50 - 30)*((100vw - 320px) / (1200 - 320)));
-}
 
-}
-@media(max-width:1230px){
-	.title__text{
-		font-size: calc(14px + (16 - 14)*((100vw - 320px) / (1200 - 320)));
-}
-
-}
 
 .title__buttom {
 	@include button	 
@@ -167,18 +180,12 @@ background-clip: content-box;
 }
 
 @media(max-width:1230px){
-	#right{
-		width: calc(40px + (55 - 40)*((100vw - 320px) / (1200 - 320)));
-		height: calc(40px + (55 - 40)*((100vw - 320px) / (1200 - 320)));
-}
+
 
 }
 
 @media(max-width:1230px){
-	#left{
-		width: calc(40px + (55 - 40)*((100vw - 320px) / (1200 - 320)));
-		height: calc(40px + (55 - 40)*((100vw - 320px) / (1200 - 320)));
-}
+
 
 }
 @media(max-height:470px){

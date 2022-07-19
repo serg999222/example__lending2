@@ -18,15 +18,22 @@
 	padding: 0 170px;
 	margin-bottom: 40px;
 }
+@media(max-width:820px){
+	.latest-project__text {
+		padding: 0 20px;
+		margin-bottom: 40px;
+	}
+}
 .latest-project__buttons {
 	padding: 0 10px;
 	margin-bottom: 40px;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
-#buttomChoce{
-	margin: 0 10px 0 0;
+.buttomChoce{
+	margin: 0 10px 10px 0;
 	font-size: 14px;
 	font-family: "Montserrat";
 	color: rgb(140, 140, 140);
@@ -41,12 +48,12 @@
 	cursor: pointer;
 	transition: all 0.4s;
 }
-#buttomChoce:hover{
+.buttomChoce:hover{
 	background-color: #6f6256;
 	color: #ffffff;
 }
 
-#buttomChoce:active{
+.buttomChoce:active{
 	background-color: #6f6256;
 	color: #ffffff;
 }
@@ -57,13 +64,15 @@
 	@include flex (space-around ,center);
 	flex-wrap: wrap;
 }
-.window-all {
-	 position: absolute;
-	justify-content: space-around;
-}
+
 .window__item {
 	background-color: #fbfaf8;
-	margin: 0 0 30px 0;
+	margin: 0 10px 30px 10px;
+}
+
+.window__item > img{
+	max-width: 100%;
+	height: auto;
 }
 
 .itemText__title {
@@ -74,6 +83,10 @@
 		font-family: "Montserrat";
 		color: rgb(209, 209, 209);
 	margin-bottom: 25px;
+}
+.window-all {
+	position: absolute;
+  justify-content: space-around;
 }
 
 .latest-project__window-web-design {

@@ -12,6 +12,7 @@ $bgBraun: linear-gradient(to right,#211b19, #4e3427);
 @mixin container($wh) {
 	max-width: $wh;
 	margin: $mc;
+	//padding: 0 10px;
 }
 
 @mixin button{

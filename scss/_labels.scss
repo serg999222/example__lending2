@@ -10,10 +10,16 @@
 ._container {
 }
 .labels__flex-container {
-	padding: 120px 0;
+	padding: 120px 15px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	//@include flex(space-around center);
+	flex-wrap: wrap;
+}
+
+.labels__flex-container img:not(:last-child){
+	margin-right: 4vw;
 }
 .labels1 {
 	display: block;
@@ -30,4 +36,30 @@
 .labels4 {
 	display: block;
 	height: 100%;
+}
+
+.labels__minicontain1{
+	display: block;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px;
+	margin-bottom: 50px;
+}
+
+@media(max-width:1100px){
+	.labels__flex-container img{
+		width: 180px;
+	}
+}
+
+@media(max-width:900px){
+	.labels__flex-container img{
+		width: 140px;
+	}
+}
+@media(max-width:690px){
+	.labels__flex-container img{
+		width: 110px;
+	}
 }

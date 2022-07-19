@@ -20,6 +20,10 @@ body{
 	font-weight: 300;
 }
 
+body.active{
+	position: fixed;
+}
+
 .wrapper {
 	overflow: hidden;
 	max-width: 1920px;
@@ -28,13 +32,14 @@ body{
 	
 }
 
+
+
 .main{
 	flex: 1 1 auto;
 }
 	
 ._container {
 	@include container(1230px);
-	
 }
 
 

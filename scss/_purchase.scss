@@ -2,10 +2,14 @@
 	position: relative;
 	z-index: 3;
 	bottom: 20px;
-	height: 150px;
+	min-height: 150px;
 	margin-bottom: 80px;
 	background: $bgBraun;
-	@include flex(space-around, center)
+	@include flex(space-around, center);
+	flex-wrap: wrap;
+	padding: 10px;
+	
+	
 	
 }
 .purchase {
@@ -15,6 +19,17 @@
 }
 .purchase__content {
 }
+
+@media(max-width:1000px){
+
+	.purchase__title{
+		font-size: calc(18px + (28 - 18)*((100vw - 320px) / (1200 - 320)));
+	}
+	.purchase__text{
+		font-size: calc(14px + (18 - 14)*((100vw - 320px) / (1200 - 320)));
+	}
+	}
+
 .purchase__title {
 		font-size: 28px;
 		font-family: "Raleway";
@@ -22,6 +37,9 @@
 		margin-bottom: 15px;
 		 
 }
+
+
+
 .purchase__text {
 		font-size: 18px;
 		font-family: "Montserrat";

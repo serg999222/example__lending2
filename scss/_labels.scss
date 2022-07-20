@@ -1,20 +1,13 @@
-.main__labels {
-}
-.labels {
-}
+
 .labels__wrapper {
 	background: url('../img/bg\ photo-bottom.png')
 }
-.labels__container {
-}
-._container {
-}
+
 .labels__flex-container {
 	padding: 120px 15px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	//@include flex(space-around center);
 	flex-wrap: wrap;
 }
 

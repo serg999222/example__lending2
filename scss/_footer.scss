@@ -1,15 +1,17 @@
 .footer {
 	background-color: #111111;
 }
+
 .footer__container {
 	@include flex(space-between, center);
 	padding: 50px 35px;
-
-
+	flex-wrap: wrap;
 }
 
 .footer__leftMenu {
+	margin-bottom: 20px;
 }
+
 .leftMenu {
 	display: flex;
 	position: relative;
@@ -19,9 +21,6 @@
 		opacity: 0.7;
 	}
 
-	li{
-
-	}
 	
 	li:not(:last-child){
 		margin-right: 10px;
@@ -43,15 +42,9 @@
 			margin-right: 10px;	 
 	}
 }
-.leftMenu__copiright {
-}
-.leftMenu__Polic {
-}
-.leftMenu__FAQ {
-}
-.leftMenu__Support {
-}
+
 .footer__rightMenu {
+	margin-bottom: 20px;
 }
 .rightMenu {
 	display: flex;
@@ -82,10 +75,6 @@
 		margin-right: 10px;	 
 }
 }
-.rightMenu__Designedt {
-}
-.rightMenu__Market {
-}
 
 .footer-Menu__item{
 	position: relative;
@@ -105,5 +94,23 @@
 	}
 	&:hover::before{
 		transform: scaleX(1);
+	}
+}
+
+@media(max-width:799px){
+	.footer__container {
+		justify-content: center;
+	
+	
+	}
+
+	.footer__rightMenu{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.footer__leftMenu{
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 }

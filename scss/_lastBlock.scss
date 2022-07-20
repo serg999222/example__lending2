@@ -1,18 +1,12 @@
-.main__lastBlock {
-}
+
 .lastBlock {
 	background-color: #191919;
 }
+
 .lastBlock__container {
 	padding: 70px 15px;
 }
-._container {
-}
-.last-span{
 
-
-	 
-}
 
 .lastBlock__flex-container {
 	span{
@@ -23,8 +17,7 @@
 		margin-bottom: 15px;
 	}
 	display: flex;
-	//justify-content: space-between;
-	flex-wrap: wrap;
+	justify-content: space-between;
 	padding: 0 10px;
 	&>div{
 		max-width: 303px;
@@ -33,15 +26,6 @@
 }
 
 
-.lastBlock__minicontain{
-	display: flex;
-	//justify-content: center;
-	}
-.lastBlock__column1 {
-
-}
-.column1 {
-}
 .column1__logo {
 	display: flex;
 	align-items: center;
@@ -50,8 +34,9 @@
 		font-size: 34px;
 		font-family: "Raleway";
 		color: rgb(255, 255, 255);
+	}
 }
-}
+
 .column1__text {
 		font-size: 14px;
 		font-family: "Montserrat";
@@ -60,6 +45,7 @@
 		margin-bottom: 30px;
 		position: relative;
 }
+
 .column1__link {
 	a{
 		font-size: 14px;
@@ -78,10 +64,7 @@
 
 	}
 }
-.lastBlock__column2 {
-}
-.column2 {
-}
+
 .column2__title {
 		font-size: 24px;
 		font-family: "Montserrat";
@@ -89,32 +72,31 @@
 		line-height: 1.2;
 		margin-bottom: 25px;
 }
-.title-column {
-}
+
 .column__date {
 		font-size: 12px;
 		font-family: "Montserrat";
 		color: rgb(54, 54, 54);	
 		margin-bottom: 10px; 
 }
+
 .column2__text {
 	margin-bottom: 20px;
 }
+
 .text-column {
 		font-size: 14px;
 		font-family: "Montserrat";
 		color: rgb(85, 85, 85);
 	 
 }
+
 .column__date-white {
 		font-size: 12px;
 		font-family: "Montserrat";
-		color: rgb(255, 255, 255);
-	 
-
-
-	 
+		color: rgb(255, 255, 255);	 
 }
+
 .column__text-white {
 		font-size: 14px;
 		font-family: "Montserrat";
@@ -123,7 +105,8 @@
 		opacity: 0.7;
 	 
 }
-.lastBlock__column3 {
+
+.column3 {
 	a{
 		color: #00bff3;
 		&:hover{
@@ -131,8 +114,7 @@
 		}
 	}
 }
-.column3 {
-}
+
 .column3__title {
 		font-size: 24px;
 		font-family: "Raleway";
@@ -153,10 +135,7 @@
 .column3__date {
 	margin-bottom: 20px;
 }
-.lastBlock__column4 {
-}
-.column4 {
-}
+
 .column4__title {
 	font-size: 24px;
 	font-family: "Raleway";
@@ -168,4 +147,27 @@
 	display: grid;
 	grid-template: 1fr 1fr/1fr 1fr;
 	grid-gap: 8px;
+}
+.column4__container img{
+	width: 100%;
+	height: auto;
+}
+
+@media(max-width:1140px){
+	.lastBlock__flex-container{
+		flex-wrap: wrap;
+		padding: 0 120px;
+		justify-content: space-around;
+	}
+
+	.lastBlock__column{
+		margin-bottom: 50px;
+	}
+}
+
+@media(max-width:896px){
+	.lastBlock__flex-container{
+		padding: 0 40px;
+	}
+
 }

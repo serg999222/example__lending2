@@ -7,18 +7,13 @@
 	background: $bgBraun;
 	@include flex(space-around, center);
 	flex-wrap: wrap;
-	padding: 10px;
-	
-	
-	
+	padding: 10px;	
 }
+
 .purchase {
-	background-color: darkgoldenrod;
-	
-	
+	background-color: darkgoldenrod;	
 }
-.purchase__content {
-}
+
 
 @media(max-width:1000px){
 

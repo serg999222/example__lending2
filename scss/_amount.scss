@@ -1,33 +1,23 @@
 .main__amount {
 	position: relative;
 	background: $bgBraun;
-	//min-height: 300px;
 }
 
-.amount {}
 
 .amount__container {
 	padding: 60px 15px;
-
 }
 
 .amountt__flexContainer {
-	//display: flex;
-	// justify-content: space-around;
-	// align-items: center;
-
 	@include flex(space-around, center);
-
 }
 
 .amount__item {
-	//justify-content: space-around;
 	margin-bottom: 10px;
 	padding: 0 10px;
 
 }
 
-.item-amout {}
 
 .item-amout__content {
 	text-align: center;
@@ -69,18 +59,16 @@
 		margin-bottom: 25px;
 }
 @media(max-width:760px){
+
 	.amountt__flexContainer {
-	flex-wrap: wrap;
-	
+	flex-wrap: wrap;	
 	}
 
 	.amount__item {
-		//justify-content: space-around;
 		margin-bottom: 25px;
-	
 	}
-	.item-amout__int {
 
+	.item-amout__int {
 		font-size: calc(26px + (48 - 26)*((100vw - 320px) / (1200 - 320)));
 	}
 	
